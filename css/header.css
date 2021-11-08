@@ -1,0 +1,105 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 62px;
+  background-color: rgb(45, 47, 51);
+}
+
+header .mid {
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+
+header .mid .logo {
+  float: left;
+  width: 270px;
+  margin: 15px auto;
+}
+
+header .mid .logo img {
+  height: 32px;
+  vertical-align: middle;
+}
+
+header .mid .logo strong {
+  margin: 10px;
+}
+
+header .mid .logo strong::before {
+  content: '|';
+}
+
+header .mid .list {
+  float: left;
+  width: calc(68 * 6 + 82)+'px';
+  list-style: none;
+}
+
+header .mid .list li {
+  float: left;
+  width: 68px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+}
+
+header .mid .list li:hover {
+  background-color: rgb(83, 85, 88);
+}
+
+header .mid .user {
+  float: right;
+  width: 327px;
+}
+
+header .mid .user form {
+  float: left;
+  width: 99px;
+  margin-top: 15px;
+}
+
+header .mid .user form input {
+  width: 99px;
+  height: 30px;
+  outline: none;
+  border-radius: 15px;
+  background-color: rgb(83, 85, 88);
+}
+
+header .mid .user form input:focus {
+  margin-left: -21px;
+  width: 120px;
+  caret-color: transparent;
+}
+
+header .mid .user .focus, header .mid .user .message {
+  float: left;
+  width: 68px;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+}
+
+header .mid .user .focus:hover {
+  background-color: rgb(83, 85, 88);
+}
+
+header .mid .user .message:hover {
+  background-color: rgb(83, 85, 88);
+}
+
+header .mid .user .userInfo {
+  float: right;
+  width: 82px;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+}
+
+header .mid .user .userInfo a img {
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 16px;
+}
