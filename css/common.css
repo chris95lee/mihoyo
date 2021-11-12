@@ -17,3 +17,11 @@ a {
 li {
   list-style: none;
 }
+/* 清除浮动，注意此时父元素不要有height */
+.clearfix::after {
+  content:'';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

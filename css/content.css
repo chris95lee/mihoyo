@@ -1,0 +1,18 @@
+.content {
+  width: 1000px;
+  margin: 62px auto 0;
+}
+
+.content article {
+  float: left;
+  width: 700px;
+  height: 3000px;
+  background-color: coral;
+}
+
+.content aside {
+  float: right;
+  width: 280px;
+  height: 1000px;
+  background-color: wheat;
+}
