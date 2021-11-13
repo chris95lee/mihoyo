@@ -1,18 +1,190 @@
 .content {
   width: 1000px;
-  margin: 62px auto 0;
+  margin: 92px auto 0;
 }
 
 .content article {
   float: left;
   width: 700px;
-  height: 3000px;
-  background-color: coral;
+}
+
+.content article .picscroll {
+  width: 700px;
+  height: 254px;
+  margin-bottom: 30px;
+  background-color: beige;
+}
+
+.content article .articlelist {
+  background-color: pink;
+}
+
+.content article .articlelist li {
+  width: 700px;
+  height: 300px;
+  background-color: aqua;
 }
 
 .content aside {
   float: right;
   width: 280px;
   height: 1000px;
-  background-color: wheat;
+}
+
+.content aside .asidecommit {
+  width: 280px;
+  margin: 0 auto 50px;
+  height: 234px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.content aside .asidecommit>p {
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  border-bottom: 1px dotted gray;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content aside .asidecommit>div {
+  height: 60px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.content aside .asidecommit>div button {
+  width: 160px;
+  height: 40px;
+  color: #663c00;
+  font-weight: 600;
+  background: #ffe14c;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content aside .asidecommit>div p {
+  color: #999;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.content aside .download {
+  width: 252px;
+  height: 110px;
+  padding: 20px 14px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.content aside .download .download-img {
+  float: left;
+  padding: 5px 0;
+}
+
+.content aside .download .download-img img {
+  width: 100px;
+}
+
+.content aside .download .download-text {
+  float: right;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+.content aside .download .download-text p {
+  height: 25px;
+  line-height: 25px;
+}
+
+.content aside .download .download-text p:first-child {
+  color: #00c3ff;
+}
+
+.content aside .download .download-text p:last-child {
+  color: #999;
+}
+
+.content aside .banner {
+  margin-top: 20px;
+}
+
+.content aside .banner img {
+  width: 280px;
+}
+
+.content aside .news {
+  height: 396px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.content aside .news .news-header {
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding: 0 20px;
+}
+
+.content aside .news .news-header strong {
+  float: left;
+}
+
+.content aside .news .news-header a {
+  float: right;
+  font-size: 14px;
+  color: #999
+}
+
+.content aside .news .news-body {
+  padding: 20px;
+}
+
+.content aside .news .news-body .news-body-img {
+  position: relative;
+  width: 240px;
+  height: 136px;
+  background-image: url(../img/newspic.jpg);
+  background-size: auto 136px;
+  background-position: -28px 0;
+}
+
+.content aside .news .news-body .news-body-img .news-body-img-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content aside .news .news-body .news-list li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+.content aside .news .news-body .news-list li span:first-child {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #c3ccd9;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.content aside .news .news-body .news-list li span:last-child {
+  font-size: 14px;
+  color: #333;
 }
