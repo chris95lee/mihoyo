@@ -7,11 +7,11 @@ header {
 }
 
 header .mid {
-  width: 70%;
+  width: 1200px;
   margin: 0 auto;
   color: white;
 }
-
+/* logo */
 header .mid .logo {
   float: left;
   width: 270px;
@@ -30,7 +30,7 @@ header .mid .logo strong {
 header .mid .logo strong::before {
   content: '|';
 }
-
+/* list */
 header .mid .list {
   float: left;
   width: calc(68 * 6 + 82)+'px';
@@ -48,7 +48,7 @@ header .mid .list li {
 header .mid .list li:hover {
   background-color: rgb(83, 85, 88);
 }
-
+/* user */
 header .mid .user {
   float: right;
   width: 327px;
