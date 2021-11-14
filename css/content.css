@@ -1,7 +1,9 @@
 .content {
   width: 1000px;
-  margin: 92px auto 0;
+  margin: 92px auto;
 }
+
+/* article */
 
 .content article {
   float: left;
@@ -15,20 +17,145 @@
   background-color: beige;
 }
 
-.content article .articlelist {
-  background-color: pink;
+.content article .articlelist li {
+  width: 640px;
+  padding: 24px 30px;
+  margin-bottom: 2px;
+  background-color: white;
+  border-radius: 4px;
 }
 
-.content article .articlelist li {
-  width: 700px;
-  height: 300px;
-  background-color: aqua;
+.content article .articlelist li .article-item-header {
+  height: 24px;
+  margin-bottom: 15px;
+  font-size: 12px;
 }
+
+.content article .articlelist li .article-item-header a:first-child img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.content article .articlelist li .article-item-header a:last-of-type span {
+  color: #666;
+}
+
+.content article .articlelist li .article-item-header a:last-of-type img {
+  width: 27px;
+  height: 12px;
+}
+
+.content article .articlelist li .article-item-header span {
+  color: #ccc;
+}
+
+.content article .articlelist li .article-item-body {
+  height: 175px;
+}
+
+.content article .articlelist li .article-item-body .article-item-body-title {
+  margin-bottom: 5px;
+}
+
+.content article .articlelist li .article-item-body .article-item-body-title h3 {
+  float: left;
+  font-size: 16px;
+}
+
+.content article .articlelist li .article-item-body .article-item-body-title h3:first-of-type {
+  width: 28px;
+  padding: 0 4px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #00c3ff;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.content article .articlelist li .article-item-body .article-item-body-content {
+  margin-top: 8px;
+  color: #999;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content article .articlelist li .article-item-body .article-item-body-pic {
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+  background-image: url(../img/articlepic.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content article .articlelist li .article-item-footer {
+  height: 29px;
+  margin-top: 12px;
+}
+
+.content article .articlelist li .article-item-footer .article-item-footer-label {
+  float: left;
+  width: 60px;
+  height: 24px;
+  border-radius: 12px;
+  line-height: 24px;
+  padding: 0 12px;
+  font-size: 12px;
+  background-color: rgb(235, 235, 235);
+}
+
+.content article .articlelist li .article-item-footer .article-item-footer-label a {
+  color: rgb(122, 122, 122);
+}
+
+.content article .articlelist li .article-item-footer .article-item-footer-details {
+  float: right;
+  color: #ccc;
+}
+
+.content article .articlelist li .article-item-footer .article-item-footer-details span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.content article .articlelist li .article-item-footer .article-item-footer-details span:nth-child(2n) {
+  width: 50px;
+  font-size: 14px;
+}
+
+.content article .articlelist li .article-item-footer .article-item-footer-details a {
+  color: #ccc;
+}
+
+/* secondlist append */
+
+.content article .articlelist .secondlist .article-item-body {
+  height: auto;
+}
+
+.content article .articlelist .secondlist .article-item-body .article-item-body-pic {
+  width: 400px;
+  height: 225px;
+  margin-top: 10px;
+  background-image: url(../img/articlepic2.jfif);
+}
+
+/* thirdlist append */
+
+.content article .articlelist .thirdlist .article-item-body .article-item-body-pic {
+  float: left;
+  margin-right: 5px;
+}
+
+/* aside */
 
 .content aside {
   float: right;
   width: 280px;
-  height: 1000px;
 }
 
 .content aside .asidecommit {
@@ -76,7 +203,7 @@
 
 .content aside .download {
   width: 252px;
-  height: 110px;
+  height: 100px;
   padding: 20px 14px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -116,6 +243,7 @@
 
 .content aside .banner img {
   width: 280px;
+  border-radius: 4px;
 }
 
 .content aside .news {
