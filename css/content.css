@@ -14,17 +14,19 @@
   width: 700px;
   height: 254px;
   margin-bottom: 30px;
-  background-color: #00c3ff;
+  /* background-color: #00c3ff; */
 }
 
 /* 引入swiper轮播图 */
 
-.swiper-container {
+.content article .picscroll .swiper-container {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
-.swiper-slide {
+.content article .picscroll .swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: none;
@@ -43,19 +45,23 @@
   align-items: center;
   transition: 300ms;
   transform: scale(0.8);
-  opacity: 0.4;
 }
 
-.swiper-slide img {
+.content article .picscroll .swiper-container .swiper-slide img {
   width: 496px;
   height: 234px;
+  border-radius: 8px;
 }
 
-.swiper-slide-active, .swiper-slide-duplicate-active {
+.content article .picscroll .swiper-container .swiper-slide-active, .content article .picscroll .swiper-container .swiper-slide-duplicate-active {
   transform: scale(1);
   z-index: 999;
-  opacity: 1;
 }
+
+.content article .picscroll .swiper-container .swiper-slide-active+div, .content article .picscroll .swiper-container .swiper-slide-duplicate-active+div {
+  z-index: 99;
+}
+
 
 /* swiper轮播图结束 */
 
